@@ -42,7 +42,7 @@ export function Hero() {
                   key={s.heading}
                   className="flex min-h-[clamp(400px,44vw,520px)] w-full min-w-0 flex-none flex-col items-center justify-center pr-[clamp(20px,4vw,48px)] text-center sm:items-start sm:text-left"
                 >
-                  <h1 className="max-w-[820px] text-[clamp(30px,4.3vw,60px)] leading-[1.25] font-extrabold tracking-[-0.03em] text-balance">
+                  <h1 className="font-weight-600 max-w-[820px] text-[clamp(30px,4.3vw,60px)] leading-[1.25] tracking-[-0.03em] text-balance">
                     {s.heading} <span className="text-orange">{s.highlight}</span>
                   </h1>
                   <p className="mt-[clamp(18px,2.4vw,26px)] max-w-[90%] text-[clamp(15px,1.6vw,24px)] leading-[1.55] font-medium text-ink-soft text-pretty sm:max-w-[50%] sm:leading-[1.62]">

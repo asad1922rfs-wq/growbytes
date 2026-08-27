@@ -15,14 +15,16 @@ export default function Icon() {
           justifyContent: "center",
         }}
       >
-        <div
-          style={{
-            width: 22,
-            height: 22,
-            borderRadius: "50%",
-            background: "#EE5B2B",
-          }}
-        />
+        <svg
+          width="26"
+          height="26"
+          viewBox="0 0 100 100"
+          fill="#EE5B2B"
+        >
+          <path d="M42,50 L84,50 A42,42 0 1 1 42,8 Z" />
+          <circle cx="76" cy="27" r="15" />
+          <rect x="61" y="46" width="30" height="46" rx="15" />
+        </svg>
       </div>
     ),
     { ...size },

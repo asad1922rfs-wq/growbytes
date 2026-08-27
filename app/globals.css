@@ -9,10 +9,13 @@
   --color-muted-faint: #b4b8bc;
   --color-orange: #ee5b2b;
   --color-orange-dark: #c9451a;
-  --color-cream: #f7f5f2;
-  --color-cream-alt: #f4f2ee;
+  --color-cream: #f5f6f6;
+  --color-cream-alt: #eff1f1;
   --color-warm: #fff6f1;
   --color-peach: #fff1ea;
+  --color-mint: #d3ecda;
+  --color-blue: #2563eb;
+  --color-blue-dark: #1d4fc4;
 
   --font-sans: var(--font-outfit), system-ui, sans-serif;
   --font-heading: var(--font-plus-jakarta), system-ui, sans-serif;
@@ -74,6 +77,10 @@ h6 {
 
 ::selection {
   background: #ffd9c9;
+}
+
+.font-weight-600 {
+  font-weight: 600 !important;
 }
 
 .no-scrollbar {
