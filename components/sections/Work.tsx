@@ -9,7 +9,7 @@ export function Work() {
     <section id="work" className="border-t border-ink/[0.06] bg-cream">
       <Container className="py-[clamp(64px,8vw,124px)]">
         <div className="mb-[clamp(32px,4vw,54px)] grid grid-cols-1 items-end gap-[clamp(18px,3vw,48px)] sm:[grid-template-columns:repeat(auto-fit,minmax(min(100%,340px),1fr))]">
-          <h2 className="text-[clamp(30px,3.7vw,50px)] leading-[1.06] font-extrabold tracking-[-0.035em]">
+          <h2 className="font-weight-600 text-[clamp(30px,3.7vw,50px)] leading-[1.06] tracking-[-0.035em]">
             Work That Speaks for Itself.
           </h2>
           <p className="max-w-[460px] text-[clamp(15px,1.25vw,17px)] leading-[1.62] text-muted text-pretty">

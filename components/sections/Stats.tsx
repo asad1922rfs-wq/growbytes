@@ -57,7 +57,7 @@ export function Stats() {
     <section ref={sectionRef} className="bg-ink text-white">
       <Container className="py-[clamp(56px,7vw,104px)]">
         <div className="mb-[clamp(32px,4vw,52px)] flex flex-wrap items-end justify-between gap-4">
-          <h2 className="text-[clamp(30px,3.7vw,50px)] leading-[1.06] font-extrabold tracking-[-0.035em]">
+          <h2 className="font-weight-600 text-[clamp(30px,3.7vw,50px)] leading-[1.06] tracking-[-0.035em]">
             Built to Deliver.
           </h2>
           <p className="max-w-[380px] text-[14.5px] leading-[1.6] text-muted-soft">

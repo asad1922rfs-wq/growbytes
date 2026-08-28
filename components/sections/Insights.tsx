@@ -13,7 +13,7 @@ export function Insights() {
     <section id="insights" className="bg-white">
       <Container className="py-[clamp(64px,8vw,124px)]">
         <div className="mb-[clamp(28px,3.5vw,46px)] flex flex-wrap items-end justify-between gap-5">
-          <h2 className="text-[clamp(30px,3.7vw,50px)] leading-[1.06] font-extrabold tracking-[-0.035em]">
+          <h2 className="font-weight-600 text-[clamp(30px,3.7vw,50px)] leading-[1.06] tracking-[-0.035em]">
             Our Latest Insights.
           </h2>
           <Link href="/resources/blog" className="text-[12.5px] text-orange">

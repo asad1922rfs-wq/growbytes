@@ -28,10 +28,10 @@ export function ServiceCard({
           : "border-ink/[0.08] bg-cream hover:border-ink/20"
       } ${
         variant === "primary"
-          ? "p-8 lg:p-9"
+          ? "p-6 sm:p-8 lg:p-9"
           : isWide
-            ? "p-7 lg:p-8"
-            : "p-6 lg:p-7"
+            ? "p-6 sm:p-7 lg:p-8"
+            : "p-5 sm:p-6 lg:p-7"
       } ${className}`}
     >
       {dark && !isWide && (
@@ -67,7 +67,7 @@ export function ServiceCard({
         <div className={isWide ? "lg:w-[300px] lg:flex-none" : ""}>
           <span
             className={`flex flex-none items-center justify-center rounded-2xl motion-safe:transition-colors motion-safe:duration-300 ${
-              variant === "compact" ? "h-16 w-16" : "h-20 w-20"
+              variant === "compact" ? "h-12 w-12 sm:h-16 sm:w-16" : "h-14 w-14 sm:h-20 sm:w-20"
             } ${
               dark
                 ? "bg-orange text-white group-hover:bg-orange-dark"
@@ -75,24 +75,28 @@ export function ServiceCard({
             }`}
           >
             <Icon
-              className={variant === "compact" ? "h-8 w-8" : "h-10 w-10"}
+              className={
+                variant === "compact" ? "h-6 w-6 sm:h-8 sm:w-8" : "h-7 w-7 sm:h-10 sm:w-10"
+              }
               strokeWidth={1.5}
             />
           </span>
           <h3
-            className={`mt-5 font-bold tracking-[-0.02em] ${
+            className={`mt-4 font-bold tracking-[-0.02em] sm:mt-5 ${
               variant === "primary"
-                ? "text-[clamp(24px,2.1vw,29px)]"
+                ? "text-[22px] sm:text-[clamp(24px,2.1vw,29px)]"
                 : isWide
-                  ? "text-[clamp(24px,2.1vw,29px)]"
-                  : "text-[24px]"
+                  ? "text-[22px] sm:text-[clamp(24px,2.1vw,29px)]"
+                  : "text-[20px] sm:text-[24px]"
             }`}
           >
             {category.title}
           </h3>
           <p
             className={`mt-2.5 leading-[1.6] text-pretty ${
-              variant === "compact" ? "text-[15px]" : "max-w-[380px] text-[16px]"
+              variant === "compact"
+                ? "text-[14px] sm:text-[15px]"
+                : "max-w-[380px] text-[15px] sm:text-[16px]"
             } ${dark ? "text-muted-softer" : "text-muted"}`}
           >
             {category.description}
@@ -103,7 +107,7 @@ export function ServiceCard({
           <ul
             className={`gap-x-4 gap-y-1.5 ${
               variant === "primary"
-                ? "grid grid-cols-2"
+                ? "grid grid-cols-1 sm:grid-cols-2"
                 : isWide
                   ? "flex flex-wrap gap-x-6 gap-y-1.5"
                   : "flex flex-col gap-1.5"
@@ -112,7 +116,7 @@ export function ServiceCard({
             {category.services.map((service) => (
               <li
                 key={service}
-                className={`flex items-center gap-2.5 text-[17px] leading-snug font-medium ${
+                className={`flex items-center gap-2.5 text-[15px] leading-snug font-medium sm:text-[17px] ${
                   dark ? "text-white" : "text-ink-soft"
                 }`}
               >
@@ -127,7 +131,9 @@ export function ServiceCard({
               <span
                 key={tech}
                 className={`rounded-full border font-medium motion-safe:transition-colors motion-safe:duration-300 ${
-                  isWide ? "px-4 py-2 text-[14px]" : "px-3 py-1.5 text-[12.5px]"
+                  isWide
+                    ? "px-3 py-1.5 text-[12.5px] sm:px-4 sm:py-2 sm:text-[14px]"
+                    : "px-3 py-1.5 text-[12.5px]"
                 } ${
                   dark
                     ? "border-white/25 text-white/85 group-hover:border-white/40 group-hover:text-white"

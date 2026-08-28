@@ -5,7 +5,7 @@ export function TechStack() {
   return (
     <section id="industries" className="bg-ink text-white">
       <Container className="py-[clamp(64px,8vw,124px)]">
-        <h2 className="max-w-[760px] text-[clamp(30px,3.7vw,50px)] leading-[1.06] font-extrabold tracking-[-0.035em]">
+        <h2 className="font-weight-600 max-w-[760px] text-[clamp(30px,3.7vw,50px)] leading-[1.06] tracking-[-0.035em]">
           Built for the Modern Digital World.
         </h2>
         <p className="mt-[18px] max-w-[560px] text-[clamp(15px,1.25vw,17px)] leading-[1.62] text-muted-softer text-pretty">

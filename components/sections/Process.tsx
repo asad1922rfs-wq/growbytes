@@ -12,7 +12,7 @@ export function Process() {
       <div className="pointer-events-none absolute top-[18%] -left-[220px] h-[520px] w-[520px] rounded-full bg-[radial-gradient(circle_at_50%_50%,rgba(238,91,43,0.07),rgba(238,91,43,0)_68%)]" />
       <Container className="relative flex flex-wrap items-start gap-[clamp(40px,5vw,84px)] py-[clamp(64px,8vw,130px)]">
         <div className="min-w-0 flex-[1_1_380px]">
-          <h2 className="text-[clamp(36px,4.3vw,60px)] leading-[1.02] font-extrabold tracking-[-0.038em] text-balance">
+          <h2 className="font-weight-600 text-[clamp(36px,4.3vw,60px)] leading-[1.02] tracking-[-0.038em] text-balance">
             A Simple Process.
             <br />
             Built Around Your <span className="text-orange">Goals.</span>
@@ -71,9 +71,9 @@ export function Process() {
             <div className="flex flex-wrap items-center gap-4">
               <a
                 href="#contact"
-                className="inline-flex items-center gap-2.5 rounded-xl bg-orange px-[23px] py-[15px] text-[15.5px] font-bold text-white transition-transform duration-[250ms] hover:-translate-y-0.5"
+                className="inline-flex items-center gap-2.5 rounded-xl bg-orange px-[16px] py-[12.5px] text-[17px] font-bold text-white transition-transform duration-[250ms] hover:-translate-y-0.5"
               >
-                Start Your Project →
+                Start Your Project
               </a>
               <a
                 href="#contact"

@@ -7,7 +7,7 @@ export function About() {
       <Container className="py-[clamp(64px,8vw,124px)]">
         <div className="grid grid-cols-1 gap-[clamp(28px,4vw,64px)] sm:[grid-template-columns:repeat(auto-fit,minmax(min(100%,340px),1fr))]">
           <div>
-            <h2 className="text-[clamp(30px,3.7vw,50px)] leading-[1.06] font-extrabold tracking-[-0.035em] text-balance">
+            <h2 className="font-weight-600 text-[clamp(30px,3.7vw,50px)] leading-[1.06] tracking-[-0.035em] text-balance">
               More Than an Agency. A Digital Growth Partner.
             </h2>
             <p className="mt-[18px] max-w-[440px] text-[clamp(15px,1.25vw,17px)] leading-[1.62] text-muted text-pretty">

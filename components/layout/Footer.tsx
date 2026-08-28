@@ -67,15 +67,15 @@ export function Footer() {
             <div className="mt-5.5 flex flex-wrap gap-3">
               <Link
                 href="#contact"
-                className="inline-flex items-center justify-center rounded-xl border border-ink/20 bg-transparent px-6.5 py-[15px] text-[15.5px] font-semibold text-ink transition-colors duration-[250ms] hover:border-ink/30 hover:bg-white"
+                className="inline-flex items-center justify-center rounded-xl border border-ink/20 bg-transparent px-6.5 py-[15px] text-[17px] font-semibold text-ink transition-colors duration-[250ms] hover:border-ink/30 hover:bg-white"
               >
-                Contact Us
+                Contact Us →
               </Link>
               <a
                 href="mailto:hello@growbytes.com"
-                className="inline-flex items-center gap-2.5 rounded-xl bg-orange px-6.5 py-[15px] text-[15.5px] font-bold text-white transition-transform duration-[250ms] hover:-translate-y-0.5"
+                className="inline-flex items-center gap-2.5 rounded-xl bg-orange px-[16px] py-[12.5px] text-[17px] font-bold text-white transition-transform duration-[250ms] hover:-translate-y-0.5"
               >
-                Start a Project →
+                Start a Project
               </a>
             </div>
             <p className="mt-6.5 text-[16.5px] font-bold tracking-[-0.02em] text-ink">
