@@ -24,6 +24,7 @@ export function AnnouncementBar() {
         type="button"
         onClick={() => setDismissed(true)}
         aria-label="Dismiss announcement"
+        suppressHydrationWarning
         className="absolute right-3 flex h-6 w-6 items-center justify-center rounded-full text-white/70 transition-colors hover:bg-white/10 hover:text-white"
       >
         ×

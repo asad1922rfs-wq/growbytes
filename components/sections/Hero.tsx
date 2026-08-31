@@ -50,13 +50,13 @@ export function Hero() {
                   <div className="mt-[clamp(24px,3vw,34px)] flex flex-wrap justify-center gap-3 sm:justify-start">
                     <Link
                       href={s.primaryCta.href}
-                      className="font-sans inline-flex items-center gap-2.5 rounded-xl bg-orange px-[14px] py-[14px] text-[15px] leading-none font-medium text-white transition-transform duration-[250ms] hover:-translate-y-0.5 sm:px-[16px] sm:py-[12.5px] sm:text-[20px]"
+                      className="font-sans inline-flex items-center gap-2.5 rounded-xl bg-orange px-[14px] py-[14px] text-[15px] leading-none font-normal tracking-[0.02em] text-white transition-transform duration-[250ms] hover:-translate-y-0.5 sm:px-[16px] sm:py-[12.5px] sm:text-[20px]"
                     >
                       {s.primaryCta.label}
                     </Link>
                     <Link
                       href={s.secondaryCta.href}
-                      className="font-sans inline-flex items-center gap-2.5 rounded-xl border border-ink/[0.14] bg-white px-[14px] py-[14px] text-[15px] leading-none font-medium text-ink transition-colors duration-[250ms] hover:bg-cream sm:px-[clamp(20px,1.8vw,28px)] sm:py-[clamp(14px,1.4vw,18px)] sm:text-[20px]"
+                      className="font-sans inline-flex items-center gap-2.5 rounded-xl border border-ink/[0.14] bg-white px-[14px] py-[14px] text-[15px] leading-none font-normal tracking-[0.02em] text-ink transition-colors duration-[250ms] hover:bg-cream sm:px-[clamp(20px,1.8vw,28px)] sm:py-[clamp(14px,1.4vw,18px)] sm:text-[20px]"
                     >
                       {s.secondaryCta.label} →
                     </Link>

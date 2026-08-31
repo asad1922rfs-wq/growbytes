@@ -2,6 +2,10 @@ import { NavLink } from "./navigation";
 
 export const footerColumns: { title: string; links: NavLink[] }[] = [
   {
+    title: "Services",
+    links: [],
+  },
+  {
     title: "Explore GrowBytes",
     links: [
       { label: "About Us", href: "/company/about" },
@@ -10,25 +14,6 @@ export const footerColumns: { title: string; links: NavLink[] }[] = [
       { label: "Industries", href: "#industries" },
       { label: "Careers", href: "/company/careers" },
       { label: "Contact Us", href: "#contact" },
-    ],
-  },
-  {
-    title: "Services",
-    links: [
-      { label: "Custom Software Development", href: "/services/custom-software" },
-      { label: "Web Application Development", href: "/services/web-development" },
-      { label: "Mobile App Development", href: "/services/mobile-app" },
-      { label: "MVP Development", href: "/services/mvp-development" },
-      { label: "UI/UX & Product Design", href: "/services/ui-ux-design" },
-      { label: "E-commerce Development", href: "/services/e-commerce" },
-      { label: "Cloud & DevOps", href: "/services/cloud-devops" },
-      { label: "QA & Software Testing", href: "/services/qa-testing" },
-      { label: "AI & Automation", href: "/solutions/ai-automation" },
-      { label: "Machine Learning & Data Science", href: "/services/machine-learning" },
-      { label: "Staff Augmentation", href: "/services/staff-augmentation" },
-      { label: "Cybersecurity", href: "/services/cybersecurity" },
-      { label: "Digital Marketing & SEO", href: "/services/digital-marketing" },
-      { label: "Branding & Creative", href: "/services/branding-creative" },
     ],
   },
   {

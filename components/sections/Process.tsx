@@ -71,7 +71,7 @@ export function Process() {
             <div className="flex flex-wrap items-center gap-4">
               <a
                 href="#contact"
-                className="inline-flex items-center gap-2.5 rounded-xl bg-orange px-[16px] py-[12.5px] text-[17px] font-bold text-white transition-transform duration-[250ms] hover:-translate-y-0.5"
+                className="inline-flex items-center gap-2.5 rounded-xl bg-orange px-[16px] py-[12.5px] text-[17px] font-normal tracking-[0.02em] text-white transition-transform duration-[250ms] hover:-translate-y-0.5"
               >
                 Start Your Project
               </a>

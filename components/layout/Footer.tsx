@@ -2,40 +2,47 @@ import Link from "next/link";
 import { Logo } from "./Logo";
 import { NewsletterForm } from "./NewsletterForm";
 import { footerColumns, legalLinks, socialLinks } from "@/lib/data/footer";
+import { services } from "@/lib/data/services";
 
 export function Footer() {
   return (
     <footer className="border-t border-ink/[0.08] bg-white">
       <div className="mx-auto flex max-w-[1510px] flex-wrap items-stretch">
-        <div className="flex min-w-0 flex-[1_1_620px] flex-col bg-white p-[clamp(48px,6vw,88px)_clamp(20px,4vw,56px)_clamp(28px,3vw,40px)]">
-          <div className="flex flex-wrap gap-[clamp(26px,3.5vw,56px)]">
-            <div className="max-w-[250px] flex-none">
+        <div className="order-2 flex min-w-0 flex-[1_1_620px] flex-col bg-white p-[clamp(48px,6vw,88px)_clamp(20px,4vw,56px)_40px]">
+          <div className="flex flex-col gap-[clamp(26px,3.5vw,44px)]">
+            <div className="max-w-[420px]">
               <Logo />
               <p className="mt-4 text-[14.5px] leading-[1.62] text-muted text-pretty">
                 We design, build and grow digital experiences for ambitious
                 businesses.
               </p>
             </div>
-            <div className="grid min-w-0 flex-[1_1_460px] grid-cols-2 gap-[clamp(24px,3vw,44px)] sm:[grid-template-columns:repeat(auto-fit,minmax(min(100%,170px),1fr))]">
-              {footerColumns.map((col) => (
-                <div key={col.title}>
-                  <h4 className="mb-[18px] text-[19px] font-extrabold tracking-[-0.02em] text-ink">
-                    {col.title}
-                    <span className="text-orange">.</span>
-                  </h4>
-                  <div className="flex flex-col items-start gap-2.5">
-                    {col.links.map((link) => (
-                      <Link
-                        key={link.label}
-                        href={link.href}
-                        className="text-[15px] text-ink-soft transition-all duration-[220ms] hover:translate-x-[3px] hover:text-orange"
-                      >
-                        {link.label}
-                      </Link>
-                    ))}
+            <div className="grid min-w-0 grid-cols-2 gap-x-[clamp(20px,2.5vw,40px)] gap-y-[clamp(24px,3vw,44px)] sm:grid-cols-3">
+              {footerColumns.map((col) => {
+                const isServices = col.title === "Services";
+                const links = isServices
+                  ? services.slice(0, 10).map((s) => ({ label: s.title, href: s.href }))
+                  : col.links;
+                return (
+                  <div key={col.title}>
+                    <h4 className="mb-[18px] text-[19px] font-extrabold tracking-[-0.02em] text-ink">
+                      {col.title}
+                      <span className="text-orange">.</span>
+                    </h4>
+                    <div className="flex flex-col items-start gap-2.5">
+                      {links.map((link) => (
+                        <Link
+                          key={link.label}
+                          href={link.href}
+                          className="text-[15px] text-ink-soft transition-all duration-[220ms] hover:translate-x-[3px] hover:text-orange"
+                        >
+                          {link.label}
+                        </Link>
+                      ))}
+                    </div>
                   </div>
-                </div>
-              ))}
+                );
+              })}
             </div>
           </div>
 
@@ -46,20 +53,20 @@ export function Footer() {
                   {i > 0 && <span className="block h-3 w-px bg-ink/[0.14]" />}
                   <Link
                     href={link.href}
-                    className="text-[12.5px] text-muted transition-colors duration-[220ms] hover:text-orange"
+                    className="text-[12.5px] text-ink transition-colors duration-[220ms] hover:text-orange"
                   >
                     {link.label}
                   </Link>
                 </span>
               ))}
             </div>
-            <p className="mt-3.5 text-[12.5px] text-muted-soft">
+            <p className="mt-8 text-[12.5px] text-ink">
               © 2026 GrowBytes. All rights reserved.
             </p>
           </div>
         </div>
 
-        <div className="flex min-w-0 flex-[1_1_400px] flex-col gap-[clamp(34px,4vw,52px)] bg-cream-alt p-[clamp(48px,6vw,88px)_clamp(20px,4vw,56px)_clamp(36px,4vw,56px)]">
+        <div className="order-1 flex min-w-0 flex-[0_0_500px] flex-col gap-[clamp(20px,2.5vw,30px)] bg-cream-alt p-[clamp(48px,6vw,88px)_clamp(20px,4vw,56px)_40px]">
           <div>
             <h3 className="text-[clamp(28px,3vw,36px)] leading-[1.06] font-extrabold tracking-[-0.035em] text-ink">
               Get in touch<span className="text-orange">.</span>
@@ -67,13 +74,13 @@ export function Footer() {
             <div className="mt-5.5 flex flex-wrap gap-3">
               <Link
                 href="#contact"
-                className="inline-flex items-center justify-center rounded-xl border border-ink/20 bg-transparent px-6.5 py-[15px] text-[17px] font-semibold text-ink transition-colors duration-[250ms] hover:border-ink/30 hover:bg-white"
+                className="inline-flex items-center justify-center rounded-xl border border-ink/20 bg-transparent px-[16px] py-[12.5px] text-[17px] font-normal tracking-[0.02em] text-ink transition-colors duration-[250ms] hover:border-ink/30 hover:bg-white"
               >
-                Contact Us →
+                Contact Us
               </Link>
               <a
                 href="mailto:hello@growbytes.com"
-                className="inline-flex items-center gap-2.5 rounded-xl bg-orange px-[16px] py-[12.5px] text-[17px] font-bold text-white transition-transform duration-[250ms] hover:-translate-y-0.5"
+                className="inline-flex items-center gap-2.5 rounded-xl bg-orange px-[16px] py-[12.5px] text-[17px] font-normal tracking-[0.02em] text-white transition-transform duration-[250ms] hover:-translate-y-0.5"
               >
                 Start a Project
               </a>
@@ -90,9 +97,9 @@ export function Footer() {
               </a>
               <a
                 href="tel:+000000000000"
-                className="text-[15px] text-ink-soft transition-colors duration-[220ms] hover:text-orange"
+                className="text-[18px] text-ink-soft transition-colors duration-[220ms] hover:text-orange"
               >
-                +00 000 000 0000
+                <span className="text-orange">+</span>00 000 000 0000
               </a>
               <span className="text-[15px] text-muted-soft">Global / Remote</span>
             </div>

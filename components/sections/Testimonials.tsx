@@ -27,6 +27,7 @@ export function Testimonials() {
               type="button"
               onClick={() => scrollBy(-1)}
               aria-label="Previous"
+              suppressHydrationWarning
               className="flex h-[46px] w-[46px] items-center justify-center rounded-xl border border-ink/[0.14] bg-white text-[17px] text-ink transition-colors duration-[250ms] hover:bg-ink hover:text-white"
             >
               ←
@@ -35,6 +36,7 @@ export function Testimonials() {
               type="button"
               onClick={() => scrollBy(1)}
               aria-label="Next"
+              suppressHydrationWarning
               className="flex h-[46px] w-[46px] items-center justify-center rounded-xl border border-ink/[0.14] bg-white text-[17px] text-ink transition-colors duration-[250ms] hover:bg-ink hover:text-white"
             >
               →

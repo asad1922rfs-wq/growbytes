@@ -25,7 +25,7 @@ export function NewsletterForm() {
       />
       <button
         type="submit"
-        className="inline-flex flex-none items-center gap-2.5 rounded-xl border border-ink bg-ink px-[16px] py-[12.5px] font-sans text-[17px] font-bold text-white transition-colors duration-[250ms] hover:border-orange hover:bg-orange"
+        className="inline-flex flex-none items-center gap-2.5 rounded-xl border border-ink bg-ink px-[16px] py-[12.5px] font-sans text-[17px] font-normal tracking-[0.02em] text-white transition-colors duration-[250ms] hover:border-orange hover:bg-orange"
       >
         Subscribe
       </button>

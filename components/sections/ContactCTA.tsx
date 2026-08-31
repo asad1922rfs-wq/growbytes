@@ -24,13 +24,13 @@ export function ContactCTA() {
           <div className="mt-[clamp(26px,3vw,36px)] flex flex-wrap gap-3">
             <a
               href="mailto:hello@growbytes.com"
-              className="inline-flex items-center gap-2.5 rounded-xl bg-orange px-[16px] py-[12.5px] text-[17px] font-bold text-white transition-transform duration-[250ms] hover:-translate-y-0.5"
+              className="inline-flex items-center gap-2.5 rounded-xl bg-orange px-[16px] py-[12.5px] text-[17px] font-normal tracking-[0.02em] text-white transition-transform duration-[250ms] hover:-translate-y-0.5"
             >
               Start a Conversation
             </a>
             <a
               href="#contact"
-              className="inline-flex items-center gap-2.5 rounded-xl border border-white/20 bg-transparent px-6 py-4 text-[17px] font-semibold text-white transition-colors duration-[250ms] hover:bg-white/[0.08]"
+              className="inline-flex items-center gap-2.5 rounded-xl border border-white/20 bg-transparent px-6 py-4 text-[17px] font-normal tracking-[0.02em] text-white transition-colors duration-[250ms] hover:bg-white/[0.08]"
             >
               Book a Discovery Call →
             </a>

@@ -66,20 +66,13 @@ export function ServiceCard({
       >
         <div className={isWide ? "lg:w-[300px] lg:flex-none" : ""}>
           <span
-            className={`flex flex-none items-center justify-center rounded-2xl motion-safe:transition-colors motion-safe:duration-300 ${
-              variant === "compact" ? "h-12 w-12 sm:h-16 sm:w-16" : "h-14 w-14 sm:h-20 sm:w-20"
-            } ${
+            className={`flex h-11 w-11 flex-none items-center justify-center rounded-2xl motion-safe:transition-colors motion-safe:duration-300 sm:h-14 sm:w-14 ${
               dark
                 ? "bg-orange text-white group-hover:bg-orange-dark"
                 : "bg-white text-orange group-hover:bg-orange group-hover:text-white"
             }`}
           >
-            <Icon
-              className={
-                variant === "compact" ? "h-6 w-6 sm:h-8 sm:w-8" : "h-7 w-7 sm:h-10 sm:w-10"
-              }
-              strokeWidth={1.5}
-            />
+            <Icon className="h-5 w-5 sm:h-6 sm:w-6" strokeWidth={1.5} />
           </span>
           <h3
             className={`mt-4 font-bold tracking-[-0.02em] sm:mt-5 ${

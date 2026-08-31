@@ -110,7 +110,7 @@ export function Header() {
           </nav>
           <a
             href="#contact"
-            className="ml-2 hidden flex-none items-center gap-2 rounded-[11px] bg-ink px-[16px] py-[12.5px] text-[17px] font-semibold text-white transition-all duration-[250ms] hover:-translate-y-px hover:bg-orange min-[900px]:inline-flex"
+            className="ml-2 hidden flex-none items-center gap-2 rounded-[11px] bg-ink px-[16px] py-[12.5px] text-[17px] font-normal tracking-[0.02em] text-white transition-all duration-[250ms] hover:-translate-y-px hover:bg-orange min-[900px]:inline-flex"
           >
             Let&apos;s Talk
           </a>
@@ -156,7 +156,7 @@ export function Header() {
           <a
             href="#contact"
             onClick={() => setNavOpen(false)}
-            className="mt-auto flex items-center justify-center gap-2.5 rounded-[13px] bg-orange px-[16px] py-[12.5px] text-[17px] font-bold text-white"
+            className="mt-auto flex items-center justify-center gap-2.5 rounded-[13px] bg-orange px-[16px] py-[12.5px] text-[17px] font-normal tracking-[0.02em] text-white"
           >
             Let&apos;s Talk
           </a>
